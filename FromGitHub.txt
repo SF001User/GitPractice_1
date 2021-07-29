@@ -2,4 +2,5 @@ This is the file i added from Github.com directly
 
 THIS IS MORE STUFF I added from Remote
 
-this is more text I am adding from Github.com 
+this is more text I am adding from Github.com
+This is cool commit from local
