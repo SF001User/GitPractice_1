@@ -8,5 +8,5 @@ public class Movie {
     // from 22 mins
 
     // ADDED SOME AWESOME FUNCTIONALITY INTO MOVIE CLASS
-
+    // done with tc100
 }
