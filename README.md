@@ -1,3 +1,54 @@
+# B23 Day 2 : 
+
+## Review : 
+  - Version Control System 
+  - Git 
+    - local software to keep track of changes 
+    - command line tool 
+  
+  - GitHub 
+    - Online git repo hosting platform with many collaboration features
+  
+  - GitHub Desktop 
+    - git client tool to make it easy to work with git and github 
+    - easy git config set up 
+      - provide name and email 
+      - link text editors like sublime or others
+      - easy Github.com account connection
+  
+  ### Git Terms
+  - Working Direcory (Project folder)
+    - This is where all the projects file stay 
+  
+  - Local Repository 
+    - This is where git keep track of chanegs 
+    - `.git` folder 
+    - Commits : 
+      - The changes from last point till this point
+      - Name and email of the author of this commit
+      - Commit message 
+      - SHA : a comination of letetr and number to uniquely identify this commits 
+  
+  - Staging Area 
+    - This is an hyphothetical area in between your working directory and Local repository 
+    - You can visualize it as changes tab in GitHub Desktop or IntelliJ 
+
+
+ - Remote Repository 
+   - The repository under Github.com 
+   - Can be shared on internet publicly 
+   - Can be connected to local repository 
+
+
+ - Ignoring the files we do not want to keep track of
+   - `.gitignore` file is a special file that git use to stop git from keeping track of the files in the list seprated by new line 
+    
+    your filename here 
+    your another file name here
+    your folder namem here 
+    or your pattern to describe files or folder
+--- 
+
 # Day 3 : 
 
 ## Review 
