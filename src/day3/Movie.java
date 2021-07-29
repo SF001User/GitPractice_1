@@ -7,6 +7,6 @@ public class Movie {
     // to continue the movie
     // from 22 mins
 
-    // THIS IS MY AWESOME STUFF FROM THE MASTER
-
+    // ADDED SOME AWESOME FUNCTIONALITY INTO MOVIE CLASS
+    // done with tc100
 }
