@@ -7,4 +7,6 @@ public class Movie {
     // to continue the movie
     // from 22 mins
 
+    // ADDED SOME AWESOME FUNCTIONALITY INTO MOVIE CLASS
+
 }
