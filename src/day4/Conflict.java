@@ -7,5 +7,5 @@ public class Conflict {
     // I can type anything iwant here
     // and it will become final merge resilt
     //This is collection branch content
-
+    // This is the change collection2 branch does not know about
 }
