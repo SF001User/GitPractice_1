@@ -151,3 +151,62 @@ If you are satisfied with our work you can merge the changes into main timeline 
    3. `merge` to have custom content as merge result
 6. Now Push your result to the remote 
 7. This is very common scenario while working with team members 
+
+
+
+
+# Day 4 
+
+## Recap 
+Merge Conflict - can happen while you have commits in your master branch that the feature branch you are working on , and both of the commits editing same file with different contect 
+### **Four ways to resolve**
+- Abort merge 
+- Accept Theirs (keep feature branch version)
+- Accept Yours (keep the master branch version)
+- Merge (have custom output)
+
+
+#### **Task 1** 
+Make sure you head is on master and there is no uncommitted changes 
+1. Create a branch called `collection` 
+1. Create new package called `day4`. 
+2. Create a new class called `Conflict`
+3. Make a commit for creating file 
+4. Add this text inside main method  as comment : `This is collection branch content`
+5. commit this change with meaningful commit message 
+6. Move your `HEAD` to master
+7. Create a package with same name called `day4`  
+8. Create a new class with same name `Conflict`
+9. Edit the file with the text inside `This is master branch content`
+10. Make a commit and merge --> BOOM --> CONFLICT!!! resolve it 
+11. In our case , we used last option with `custom output` as merge result 
+
+#### **Task 2**
+1. create a new branch called `collection2` 
+2. Add a comment in the class `Conflict` with this message `MORE WORK ON COLLECTION2` 
+3. Commit this change 
+4. Checkout `master`
+5. Add a different comment in the class `Conflict` with `This is the change collection2 branch does not know about` 
+6. Commit this change into master
+7. Now `merge` the `collection2` branch and boom! Conflict!!
+
+
+## GitHub Flow 
+A light weight flow for collaboration 
+
+1. Create a branch called `us-100` 
+2. Add a class called `TC001` under `day4` package 
+3. Make few commits with good commit message
+4. NOW: **`Push`** your branch to remote 
+5. This will push your local `us-100` branch to remote (newly created)`origin/us-100` branch
+6. Now go to your GitHub repository main page and observe Green `Compare and Open Pull Request` button show up. 
+7. Click on it and it will open up pull request creation page 
+   1. Add subject to describe what this change is about 
+   2. Provide description in description section for more information 
+   3.  And Click Create Pull request 
+8. This is where conversation , code review can happen 
+9. After all the review , team-member or assigned person can merge your code so it can be in origin/master 
+10. Now back to IntelliJ , 
+    1.  checkout `master` branch
+    2.  `pull` down the changes by going to `git`->`update project` 
+11. Now you are in sync with the remote 
