@@ -291,6 +291,7 @@ When you clone , you are just downloading the remote repo into local repo
 3. I still want to see your contribution 
 4. You `Fork` my repository so it can get a copy of my repo under your GitHub.com account
 5. Since you own this copy , you have full access to push 
-6. After you make some commits , you can open a pull request from `your/orgigin/master` to `my/orgin/master` 
-7. you are requesting to merge the changes you made into my repository
-8. If I approve this , your code will be merge under my repo
+6. Clone **your copy** under your IntelliJ 
+7. Now you can open pull request under pull request tab from `your/orgigin/master` to `my/orgin/master` 
+8. you are requesting to merge the changes you made to reflect on my repository
+9. If I approve this , your code will be merge under my repo
