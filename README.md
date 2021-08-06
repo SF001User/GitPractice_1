@@ -210,3 +210,87 @@ A light weight flow for collaboration
     1.  checkout `master` branch
     2.  `pull` down the changes by going to `git`->`update project` 
 11. Now you are in sync with the remote 
+
+
+# Day 5 Group Collaboration 
+
+## Group leader
+1. Set up Group project with name : group-YourGroupNumber-project
+  - Team Lead or (desinated person in the team) create the project
+  - Set up local repo, add .gitIgnore file , make initial commit
+  - Publish the local repo to GitHub.com remote repo
+  - Invite Team members as collaborator using their Github username
+
+
+## Team members 
+2. Team members set up 
+  - Provide your GitHub username to Team Lead
+  - Accept the invitation in your email 
+  - Clone the repository to IntelliJ 
+  - Start collaborating with GitHub Flow
+
+
+## Task 1 
+1. create a branch with your name and test case number you are working on 
+   for example : `abbos-tc100` 
+2. (just to avoid any conflict to start with)   
+3. Create a package with your name 
+4. Create a class with your test case name like `TC100` or something like that 
+5. do some commits 
+6. push your branch to the remote 
+7. open pull request with proper description and details 
+8. let your team member review your code 
+9. eventually let them merge your code 
+10. you do the same for your team members 
+11. checkout master and pull down the changes from the remote 
+12. start another branch and repeat the process forever
+   
+
+## Using IntelliJ for GitHub Flow 
+checkout the short for the details 
+
+
+# Branch Protection for Master Branch 
+General rule is nobody should push to the master branch , no code should go to master branch without going through GitHub flow, but right now there is no rule to prevent that. 
+
+### Expected outcome : 
+* No code should go to master without pull request 
+* No pull request should be merged without at least one review approval
+* Merge button should not be available if above criteria not met
+
+## Branch proteciton rule GitHub repo 
+1. in GitHub repo 
+   1. team lead (AKA owner of the repository) go to `Setting` -> 
+   2. Select `Branches` from left tab
+   3. Click Add rule 
+   4. Type `master` for Branch name pattern
+   5. Check below checkboxes 
+      1. **Require pull request reviews before merging**
+      2. Optionally select how many review needed (default is 1)
+      3. from all the way down **Include administrators** (this will block owner from pushing to master directly)
+   6. Click `Create` button to save
+   7. Now no code will be merged without at least one review of pull request
+
+
+--- 
+# Forking 
+Forking is a process of copying someones public repository under your account. 
+
+A common way of collaraboring for open source projects. 
+
+When you fork a repository it will create a copy under Your GitHub Account 
+
+When you clone , you are just downloading the remote repo into local repo
+
+
+--- 
+## The Fork Flow
+
+1. I started an awesome project and shared on Github
+2. Now you want to contribute the project , but I don't know you and I do not feel comfortable adding you as collaborator
+3. I still want to see your contribution 
+4. You `Fork` my repository so it can get a copy of my repo under your GitHub.com account
+5. Since you own this copy , you have full access to push 
+6. After you make some commits , you can open a pull request from `your/orgigin/master` to `my/orgin/master` 
+7. you are requesting to merge the changes you made into my repository
+8. If I approve this , your code will be merge under my repo
